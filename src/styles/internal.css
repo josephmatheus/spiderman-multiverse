@@ -43,3 +43,40 @@
 .navigator ul li:last-child {
     margin-bottom: 0px;
 }
+
+.navigator ul li a {
+    color: #FFF;
+    border: 2px solid #FFF;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navigator::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background-color: #FFF;
+    z-index: 0;
+}
+
+.navigator ul {
+    z-index: 1;
+}
+
+.navigator ul li a:hover,
+.navigator ul li a.active {
+    color: var(--primary-color);
+    background-color: #FFF;
+}
+
+.navigator .navigator__icon {
+    position: absolute;
+    top: -20px;
+}
